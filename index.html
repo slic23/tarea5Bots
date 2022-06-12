@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  
+  </head>
+  <body>
+
+
+    <div class="d-lg-flex">
+      <!-- Menú en el lateral izquierdo para pantallas grandes -->
+      <div class="bg-white d-none d-lg-block">
+          <div class="sidebar-heading text-center py-4 primary-text fs-3 fw-bold">
+           <img src="data:image/png;base64,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" width="50rem">
+               <h1>PetSchool</h1>
+          </div>
+          <div class="list-group list-group-flush my-3">
+              <a class="list-group-item list-group-item-action bg-primary second-text active">
+                  <span class="material-icons">Servicios</span>
+                 </a>
+              <a class="list-group-item list-group-item-action bg-transparent second-text">
+                  <span class="material-icons">Precios</span>
+                  Usuarios </a>
+              <a class="list-group-item list-group-item-action bg-transparent second-text">
+                  <span class="material-icons">Nuestro Equipo</span>
+                  Productos </a>
+              <a class="list-group-item list-group-item-action bg-transparent second-text">
+                <button type="button" class="btn btn-warning">Registrase</button>
+                 </a>
+              <a class="list-group-item list-group-item-action bg-transparent second-text">
+                <button type="button" class="btn btn-warning">Iniciar Sesion</button>
+                 </a>
+              
+          </div>
+      </div>
+   
+
+
+      <div id="main-page" class="container-fluid pb-3">
+
+        <!-- Dashboard -->
+        <h2 class="my-5">Escuela de entrenamiento de mascotas </h2>
+
+        <h3>El mejor lugar para entregar y hacer disfrutar a tu mascota</h3>
+        <button type="button" class="btn btn-warning">Reserva</button>
+
+        <h2 class="my-5">Nuestros servicios</h2>
+        <div class="d-flex flex-wrap flex-lg-row">
+          
+            <div class="col card shadow m-2 callout-info datos m-lg-3">
+                <div class="card-body">
+                  <h2>Home</h2>
+                    <p class="fw-bold text-info"> Pets Boarding</p>
+                    <h6>Esto es un ejemplo de texto que podemos poner aquí para ver como va</h6>
+                </div>
+            </div>
+            <div class="col card shadow m-2 callout-primary datos m-lg-3">
+                <div class="card-body">
+                  <h2>home</h2>
+                    <p>Healthy Meals</p>
+                    <h6>Esto es un ejemplo de texto que podemos poner aquí para ver como va</h6>
+                </div>
+            </div>
+            <div class="col card shadow m-2 callout-primary datos m-lg-3">
+              <div class="card-body">
+                <h2>home</h2>
+                  <p>Actividades</p>
+                  <h6>Esto es un ejemplo de texto que podemos poner aquí para ver como va</h6>
+              </div>
+          </div>
+          <div class="col card shadow m-2 callout-primary datos m-lg-3">
+            <div class="card-body">
+              <h2>Taxi para animales</h2>
+                <p></p>
+                <h6>Esto es un ejemplo de texto que podemos poner aquí para ver como va</h6>
+            </div>
+        </div>
+        </div>
+
+        <h2 class="my-5 text-center ">Nuestros servicios</h2>
+
+        <div id="main-page" class="container-fluid pb-3">
+
+        <h2 class="my-5">Nuestros servicios</h2>
+        <div class="d-flex flex-wrap flex-lg-row">
+          
+            <div class="col card shadow m-2 callout-info datos m-lg-3">
+                <div class="card-body">
+                  <h4>ENTRENAMIENTO PERROS
+
+                  </h4>
+                    <p class="fw-bold text-info"> 20 €</p>
+                    <h6>Testo de relleno para este elemento muy chulo</h6>
+                </div>
+            </div>
+            <div class="col card shadow m-2 callout-info datos m-lg-3">
+              <div class="card-body">
+                <h4>ENTRENAMIENTO GATOS
+
+
+
+                </h4>
+                  <p class="fw-bold text-info"> 18 €</p>
+                  <h6>Testo de relleno para este elemento muy chulo</h6>
+              </div>
+          </div>
+          <div class="col card shadow m-2 callout-info datos m-lg-3">
+            <div class="card-body">
+              <h4>ALOJAMIENTO PERROS
+
+              </h4>
+                <p class="fw-bold text-info"> 36€</p>
+                <h6>Testo de relleno para este elemento muy chulo</h6>
+            </div>
+        </div>
+        <div class="col card shadow m-2 callout-info datos m-lg-3">
+          <div class="card-body">
+            <h4>ALOJAMIENTO GATOS
+
+
+
+            </h4>
+              <p class="fw-bold text-info"> 32 €</p>
+              <h6>Testo de relleno para este elemento muy chulo</h6>
+          </div>
+      </div>
+
+
+      <div class="col card shadow m-2 callout-info datos m-lg-3">
+        <div class="card-body">
+          <h4>ALOJAMIENTO CON CUIDADOS MÉDICOS
+
+
+
+          </h4>
+            <p class="fw-bold text-info"> 45 €€</p>
+            <h6>Testo de relleno para este elemento muy chulo</h6>
+        </div>
+    </div>
+
+    <div class="col card shadow m-2 callout-info datos m-lg-3">
+      <div class="card-body">
+        <h4>RECOGIDA Y ENTREGA
+
+
+
+        </h4>
+          <p class="fw-bold text-info">24 €</p>
+          <h6>Testo de relleno para este elemento muy chulo</h6>
+      </div>
+  </div>
+
+  <div class="col card shadow m-2 callout-info datos m-lg-3">
+    <div class="card-body">
+      <h4>SUPERVISIÓN POR WEBCAM
+
+
+
+      </h4>
+        <p class="fw-bold text-info"> 
+          10 €</p>
+        <h6>Testo de relleno para este elemento muy chulo</h6>
+    </div>
+</div>
+
+
+<div class="col card shadow m-2 callout-info datos m-lg-3">
+  <div class="card-body">
+    <h4>ALOJAMIENTO DE ANIMÁLES EXÓTICOS
+
+
+
+
+
+    </h4>
+      <p class="fw-bold text-info"> 30 €</p>
+      <h6>Testo de relleno para este elemento muy chulo</h6>
+  </div>
+</div>
+
+
+
+
+           
+        </div>
+
+        
+       
+       
+          
+        
+<!-- Pie -->
+<footer>
+    <div class="text-center fw-bold bg-dark p-4 text-white">Copyright © 2022</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
